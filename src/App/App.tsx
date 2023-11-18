@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Technos from "../Technos/Technos";
 import Skills from "../Skills/Skills";
 
 function App() {
@@ -21,25 +22,25 @@ function App() {
             <br />
           </p>
           <div className="button-groupe">
-            <button className="btn btn-info btn-sm normal-case mr-2">
+            <button className="btn btn-secondary text-white btn-sm normal-case mr-2">
               <Link to="https://github.com/canoral" target="_blank">
                 <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
                 Github
               </Link>
             </button>
-            <button className="btn btn-info btn-sm normal-case mr-2">
+            <button className="btn btn-secondary text-white btn-sm normal-case mr-2">
               <Link to="https://linkedin.com/in/canoral74" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
                 LinkedIn
               </Link>
             </button>
-            <button className="btn btn-info btn-sm normal-case mr-2">
+            <button className="btn btn-secondary text-white btn-sm normal-case mr-2">
               <Link to="https://www.instagram.com/dogancan__kaya/" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
                 Instagram
               </Link>
             </button>
-            <button className="btn btn-info btn-sm normal-case">
+            <button className="btn btn-secondary text-white btn-sm normal-case">
               <Link to="mailto:info.canoral@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
                 info.canoral@gmail.com
@@ -51,7 +52,10 @@ function App() {
           <img src="about.png" alt="photo de profil" className="rounded-full" width={400} height={400} />
         </div>
       </div>
-      <Skills />
+      <div className="flex flex-col items-center gap-12 mt-16 sm:mt-0 sm:gap-24">
+        <Technos />
+        <Skills />
+      </div>
     </div>
   );
 }

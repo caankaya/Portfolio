@@ -23,10 +23,7 @@ function Header() {
   };
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 mb-10">
-      <div className="w-10 rounded-full">
-        <img alt="Tailwind CSS Navbar component" src="profil.jpg" className="rounded-full" />
-      </div>
+    <div className="navbar bg-base-100 sticky top-0 mb-10 z-10">
       <div role="tablist" className="tabs tabs-bordered ml-auto">
         {generateLink("technos", "Téchnologies")}
         {generateLink("skills", "Compétences")}

@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import About from "./App/App";
+import App from "./App/App";
 import store from "../redux/store";
 import "./styles/index.css";
 import Projects from "./Projects/Projects";
@@ -12,8 +12,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} errorElement={""}>
       <Route errorElement={""}>
-        <Route index element={<About />} />
-        <Route path="/about" element={<About />} />
+        <Route index element={<App />} />
+        <Route path="/about" element={<App />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
