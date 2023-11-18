@@ -28,8 +28,8 @@ function Header() {
         <img alt="Tailwind CSS Navbar component" src="profil.jpg" className="rounded-full" />
       </div>
       <div role="tablist" className="tabs tabs-bordered ml-auto">
-        {generateLink("skills", "Compétences")}
         {generateLink("technos", "Téchnologies")}
+        {generateLink("skills", "Compétences")}
         {generateLink("projects", "Projets")}
         {generateLink("contact", "Contact")}
       </div>
