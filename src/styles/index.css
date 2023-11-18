@@ -8,3 +8,26 @@ body {
   font-family: "Open Sans", sans-serif;
   height: 100%;
 }
+
+h1 {
+  background: linear-gradient(135deg, #08ecf3, #966fb3, #ffe999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: gradient 5s ease-in-out infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

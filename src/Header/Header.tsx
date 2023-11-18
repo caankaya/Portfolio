@@ -23,12 +23,13 @@ function Header() {
   };
 
   return (
-    <div className="navbar bg-base-100 sticky top-0">
+    <div className="navbar bg-base-100 sticky top-0 mb-10">
       <div className="w-10 rounded-full">
-        <img alt="Tailwind CSS Navbar component" src="about.png" className="rounded-full" />
+        <img alt="Tailwind CSS Navbar component" src="profil.jpg" className="rounded-full" />
       </div>
       <div role="tablist" className="tabs tabs-bordered ml-auto">
-        {generateLink("about", "À Propos")}
+        {generateLink("skills", "Compétences")}
+        {generateLink("technos", "Téchnologies")}
         {generateLink("projects", "Projets")}
         {generateLink("contact", "Contact")}
       </div>
