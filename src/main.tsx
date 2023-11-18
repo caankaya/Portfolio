@@ -4,6 +4,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Layout from "./Layout/Layout";
 import App from "./App/App";
 import store from "../redux/store";
+import "./styles/index.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
