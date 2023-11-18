@@ -1,11 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import App from "./App/App";
+import store from "../redux/store";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
