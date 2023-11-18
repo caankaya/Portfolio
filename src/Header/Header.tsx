@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 sticky top-0">
       <a className="btn btn-ghost text-xl">Can KAYA / Développeur Web</a>
       <div role="tablist" className="tabs tabs-lifted ml-auto">
         {generateLink("about", "À Propos")}
