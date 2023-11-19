@@ -5,6 +5,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Technos from "../Technos/Technos";
 import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 function App() {
   return (
@@ -55,6 +57,8 @@ function App() {
       <div className="flex flex-col items-center gap-12 mt-16 sm:mt-0 sm:gap-24">
         <Technos />
         <Skills />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );

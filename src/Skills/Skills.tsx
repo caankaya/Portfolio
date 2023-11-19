@@ -12,7 +12,7 @@ export default function Skills() {
             <tr>
               <th></th>
               <th>Name</th>
-              <th>Job</th>
+              <th>Tasks</th>
               <th>True / False</th>
             </tr>
           </thead>
