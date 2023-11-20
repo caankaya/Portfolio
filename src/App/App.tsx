@@ -50,7 +50,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="article-right w-44 h-44 sm:w-fit sm:h-fit max-sm:flex">
+        <div className="article-right w-44 h-44 sm:w-fit sm:h-fit max-sm:flex max-sm:mb-5">
           <img src="about.png" alt="photo de profil" className="rounded-full block" width={400} height={400} />
         </div>
       </div>
