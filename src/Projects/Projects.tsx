@@ -5,8 +5,8 @@ export default function Projects() {
   return (
     <div className="w-full" id="projects">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Projets</h2>
-      <div className="flex justify-between">
-        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl">
+      <div className="flex justify-between max-sm:flex-col max-sm:gap-y-2">
+        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
           <div className="flex justify-evenly items-center gap-28">
             <svg
               width="64px"
@@ -137,7 +137,7 @@ export default function Projects() {
             </div>
           </div>
         </motion.div>
-        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl">
+        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
           <div className="flex justify-evenly items-center gap-28">
             <svg width="58px" height="58px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -253,7 +253,7 @@ export default function Projects() {
             </div>
           </div>
         </motion.div>
-        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl">
+        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
           <div className="flex justify-evenly items-center gap-28">
             <svg
               width="58px"

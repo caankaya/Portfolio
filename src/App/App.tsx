@@ -11,19 +11,19 @@ import Contact from "../Contact/Contact";
 function App() {
   return (
     <div className="main">
-      <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 relative">
+      <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 relative max-sm:flex max-sm:flex-col-reverse max-sm:justify-center">
         <div className="article-left">
-          <h1 className="title text-7xl font-extrabold flex flex-col">
+          <h1 className="title text-7xl font-extrabold flex flex-col max-sm:text-2xl max-sm:flex max-sm:flex-row max-sm:gap-1">
             <span>KAYA</span>
             <span>CAN HUSEYIN</span>
           </h1>
-          <p className="subtitle text-2xl my-5">
+          <p className="subtitle text-2xl my-5 max-sm:text-lg">
             <b>
               Développeur Web & Mobile | Spécialisé en React <FontAwesomeIcon icon={faReact} spin size="lg" />
             </b>
             <br />
           </p>
-          <div className="button-groupe">
+          <div className="button-groupe flex flex-row gap-y-2 max-sm:flex-col">
             <button className="btn btn-secondary text-white btn-sm normal-case mr-2">
               <Link to="https://github.com/canoral" target="_blank">
                 <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />

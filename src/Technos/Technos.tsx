@@ -2,7 +2,7 @@ export default function Technos() {
   return (
     <div className="w-full" id="technos">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Téchnologies</h2>
-      <div className="flex justify-between">
+      <div className="flex justify-between max-sm:flex-col">
         <div>
           <h3 className="text-2xl font-bold">Design</h3>
           <ul className="flex flex-col gap-2 mt-4">
