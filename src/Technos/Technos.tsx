@@ -3,7 +3,7 @@ export default function Technos() {
     <div className="w-full" id="technos">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Téchnologies</h2>
       <div className="flex justify-between max-sm:flex-col">
-        <div>
+        <div className="max-sm:mb-10">
           <h3 className="text-2xl font-bold">Design</h3>
           <ul className="flex flex-col gap-2 mt-4">
             <li className="flex items-center gap-2 text-lg">
@@ -65,11 +65,11 @@ export default function Technos() {
                   ></path>{" "}
                 </g>
               </svg>
-              Adobe Photoshop
+              Photoshop
             </li>
           </ul>
         </div>
-        <div>
+        <div className="max-sm:mb-10">
           <h3 className="text-2xl font-bold text-se">Front-end</h3>
           <ul className="flex flex-col gap-2 mt-4">
             <li className="flex items-center gap-2 text-lg">
@@ -116,7 +116,7 @@ export default function Technos() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="max-sm:mb-10">
           <h3 className="text-2xl font-bold">Back-end</h3>
           <ul className="flex flex-col gap-2 mt-4">
             <li className="flex items-center gap-2 text-lg">
