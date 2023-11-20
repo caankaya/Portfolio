@@ -13,9 +13,9 @@ function App() {
     <div className="main">
       <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
         <div className="article-left">
-          <h1 className="title text-7xl font-extrabold flex flex-col max-sm:text-4xl max-sm:text-center">
+          <h1 className="title text-7xl font-extrabold flex flex-col max-sm:text-4xl max-sm:text-center max-sm:flex-row max-sm:justify-center max-sm:gap-2">
+            <span>CAN</span>
             <span>KAYA</span>
-            <span>CAN HUSEYIN</span>
           </h1>
           <p className="subtitle text-2xl text-center my-5 max-sm:text-lg">
             <b>
