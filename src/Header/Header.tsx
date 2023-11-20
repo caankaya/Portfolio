@@ -43,8 +43,8 @@ function Header() {
   };
 
   return (
-    <div className="navbar bg-base-100 mb-10">
-      <button className="btn btn-secondary normal-case text-white" onClick={downloadCV}>
+    <div className="navbar bg-base-100 mb-10 max-sm:flex max-sm:flex-col max-sm:items-stretch max-sm:gap-3">
+      <button className="btn btn-secondary btn-sm normal-case text-white" onClick={downloadCV}>
         Télécharger CV <FontAwesomeIcon icon={faArrowDown} bounce />
       </button>
       <div role="tablist" className="tabs tabs-bordered ml-auto">
