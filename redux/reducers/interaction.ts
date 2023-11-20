@@ -11,7 +11,7 @@ const initialState: InteractionState = {
 export const testAction = createAction<string>("interaction/test");
 
 const interactionReducer = createReducer(initialState, (builder) => {
-  builder.addCase(testAction, (state, action) => {
+  builder.addCase(testAction, (state) => {
     state.test;
   });
 });
