@@ -1,5 +1,6 @@
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Header() {
   const [active, setActive] = useState("À Propos");
@@ -8,22 +9,44 @@ function Header() {
     setActive(e);
   };
 
-  const generateLink = (to: string, name: string) => {
+  const generateLink = (link: string, name: string) => {
     return (
-      <Link
-        to={`/#${to}`}
+      <a
+        href={`/#${link}`}
         className={`tab ${active === name ? "tab-active" : ""}`}
         onClick={() => {
           handleClick(name);
         }}
       >
         {name}
-      </Link>
+      </a>
     );
   };
 
+  const downloadCV = () => {
+    const url = "/CV.pdf";
+    fetch(url)
+      .then((response) => {
+        if (response.ok) {
+          response.blob().then((blob) => {
+            const fileName = "Mon_CV.pdf";
+            const link = document.createElement("a");
+            link.href = window.URL.createObjectURL(blob);
+            link.download = fileName;
+            link.click();
+          });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
-    <div className="navbar bg-base-100 sticky top-0 mb-10 z-10">
+    <div className="navbar bg-base-100 mb-10">
+      <button className="btn btn-secondary normal-case text-white" onClick={downloadCV}>
+        Télécharger CV <FontAwesomeIcon icon={faArrowDown} bounce />
+      </button>
       <div role="tablist" className="tabs tabs-bordered ml-auto">
         {generateLink("technos", "Téchnologies")}
         {generateLink("skills", "Compétences")}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="w-full">
+    <div className="w-full" id="projects">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Projets</h2>
       <div className="flex justify-between">
         <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl">

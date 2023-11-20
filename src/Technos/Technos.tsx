@@ -1,6 +1,6 @@
 export default function Technos() {
   return (
-    <div className="w-full">
+    <div className="w-full" id="technos">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Téchnologies</h2>
       <div className="flex justify-between">
         <div>

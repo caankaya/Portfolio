@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
-    <div className="w-full">
+    <div className="w-full" id="contact">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Contact</h2>
       <div className="flex flex-col items-center gap-4">
         <p>N'hésitez pas à me contacter par email ou via mes réseaux sociaux.</p>

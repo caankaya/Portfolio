@@ -10,7 +10,7 @@ import Contact from "../Contact/Contact";
 
 function App() {
   return (
-    <div className="main ">
+    <div className="main">
       <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 relative">
         <div className="article-left">
           <h1 className="title text-7xl font-extrabold flex flex-col">
