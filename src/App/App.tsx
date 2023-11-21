@@ -23,11 +23,11 @@ function App() {
             </b>
             <br />
           </p>
-          <div className="button-groupe flex flex-row gap-2 gap-y-2 max-sm:flex-col">
+          <div className="button-groupe flex flex-row gap-2 gap-y-2 max-sm:flex-col flex-wrap content-around items-stretch">
             <Link
               to="https://github.com/canoral"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
             >
               <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
               Github
@@ -36,7 +36,7 @@ function App() {
             <Link
               to="https://linkedin.com/in/canoral74"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
             >
               <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
               LinkedIn
@@ -45,13 +45,16 @@ function App() {
             <Link
               to="https://www.instagram.com/dogancan__kaya/"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
             >
               <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
               Instagram
             </Link>
 
-            <Link to="mailto:info.canoral@gmail.com" className="bg-secondary px-2 py-1 font-semibold rounded-md">
+            <Link
+              to="mailto:info.canoral@gmail.com"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
+            >
               <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
               info.canoral@gmail.com
             </Link>
