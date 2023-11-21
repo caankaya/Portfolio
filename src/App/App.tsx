@@ -65,8 +65,8 @@ function App() {
             src="about.png"
             alt="photo de profil"
             className="rounded-full border-solid border-2"
-            width={400}
-            height={400}
+            width={250}
+            height={250}
           />
         </div>
       </div>
