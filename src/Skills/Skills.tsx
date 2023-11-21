@@ -47,7 +47,7 @@ export default function Skills() {
             {/* row 4 */}
             <tr>
               <th>4</th>
-              <td>Intéractions</td>
+              <td>Interactions</td>
               <td>Développer une interface utilisateur dynamique avec des intéractions</td>
               <td>
                 <FontAwesomeIcon icon={faCheck} />

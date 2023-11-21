@@ -11,7 +11,7 @@ import Contact from "../Contact/Contact";
 function App() {
   return (
     <div className="main">
-      <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
+      <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 mb-10 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
         <div className="article-left">
           <h1 className="title text-7xl font-extrabold flex flex-col max-sm:text-4xl max-sm:text-center max-sm:flex-row max-sm:justify-center max-sm:gap-2">
             <span>CAN</span>
@@ -24,36 +24,50 @@ function App() {
             <br />
           </p>
           <div className="button-groupe flex flex-row gap-2 gap-y-2 max-sm:flex-col">
-            <button className="btn btn-secondary text-white btn-sm normal-case">
-              <Link to="https://github.com/canoral" target="_blank">
-                <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
-                Github
-              </Link>
-            </button>
-            <button className="btn btn-secondary text-white btn-sm normal-case">
-              <Link to="https://linkedin.com/in/canoral74" target="_blank">
-                <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
-                LinkedIn
-              </Link>
-            </button>
-            <button className="btn btn-secondary text-white btn-sm normal-case">
-              <Link to="https://www.instagram.com/dogancan__kaya/" target="_blank">
-                <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
-                Instagram
-              </Link>
-            </button>
-            <button className="btn btn-secondary text-white btn-sm normal-case">
-              <Link to="mailto:info.canoral@gmail.com">
-                <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
-                info.canoral@gmail.com
-              </Link>
-            </button>
+            <Link
+              to="https://github.com/canoral"
+              target="_blank"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md"
+            >
+              <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
+              Github
+            </Link>
+
+            <Link
+              to="https://linkedin.com/in/canoral74"
+              target="_blank"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
+              LinkedIn
+            </Link>
+
+            <Link
+              to="https://www.instagram.com/dogancan__kaya/"
+              target="_blank"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
+              Instagram
+            </Link>
+
+            <Link to="mailto:info.canoral@gmail.com" className="bg-secondary px-2 py-1 font-semibold rounded-md">
+              <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
+              info.canoral@gmail.com
+            </Link>
           </div>
         </div>
         <div className="article-right w-44 h-44 sm:w-fit sm:h-fit max-sm:flex max-sm:mb-5">
-          <img src="about.png" alt="photo de profil" className="rounded-full block" width={400} height={400} />
+          <img
+            src="about.png"
+            alt="photo de profil"
+            className="rounded-full border-solid border-2"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
+
       <div className="flex flex-col items-center gap-12 mt-16 sm:mt-0 sm:gap-24">
         <Technos />
         <Skills />
