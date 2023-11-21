@@ -54,40 +54,42 @@ export default function Contact() {
         </div>
       </div>
       <div className="w-[60%]">
-        <form onSubmit={handleSubmit} className="mb-6">
+        <form onSubmit={handleSubmit} className="max-sm:flex max-sm:flex-col">
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm font-medium">
               Votre e-mail
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className=" text-sm rounded-lg block w-[50%] p-2.5 bg-white text-black max-sm:w-full"
+                placeholder="nom@compagnie.com"
+                required
+              />
             </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className=" text-sm rounded-lg block w-[50%] p-2.5 bg-white text-black"
-              placeholder="nom@compagnie.com"
-              required
-            />
           </div>
           <div className="mb-6">
             <label htmlFor="message" className="block mb-2 text-sm font-medium">
               Votre message
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                className="block p-2.5 w-full text-sm rounded-lg border bg-white text-black"
+                placeholder="Écrivez votre message..."
+              ></textarea>
             </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={4}
-              className="block p-2.5 w-full text-sm rounded-lg border bg-white text-black"
-              placeholder="Écrivez votre message..."
-            ></textarea>
             <ValidationError prefix="Message" field="message" errors={state.errors} />
           </div>
-          <button
-            type="submit"
-            className="btn btn-secondary text-white btn-sm font-semibold rounded-lg text-sm mb-2 block self-center"
-            disabled={state.submitting}
-          >
-            Envoyer
-          </button>
+          <div className="max-sm:flex max-sm:flex-col max-sm:items-center">
+            <button
+              type="submit"
+              className="btn btn-secondary text-white btn-sm font-semibold rounded-lg text-sm mb-2 block max-sm:w-[65%]"
+              disabled={state.submitting}
+            >
+              Envoyer
+            </button>
+          </div>
         </form>
       </div>
     </div>
