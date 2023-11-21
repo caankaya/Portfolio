@@ -62,7 +62,7 @@ function App() {
         </div>
         <div className="article-right max-sm:flex max-sm:mb-5">
           <div className="content">
-            <img id="photo" src="about.png" alt="photo de profil" width={250} height={250} />
+            <img id="photo" src="about.png" alt="photo de profil" width={200} height={200} />
           </div>
         </div>
       </div>

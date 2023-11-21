@@ -34,16 +34,15 @@ h1 {
 
 .article-right {
   position: relative;
-  width: 250px;
-  height: 250px;
-  background-color: #ffe999;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
 .article-right::before {
   content: "";
   position: absolute;
-  inset: -10px 0px;
+  inset: -50px 0px;
   background: linear-gradient(360deg, #08ecf3, #966fb3);
   transition: 0.5s;
   animation: animate 4s linear infinite;
