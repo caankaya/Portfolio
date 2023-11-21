@@ -27,7 +27,7 @@ function App() {
             <Link
               to="https://github.com/canoral"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
             >
               <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
               Github
@@ -36,7 +36,7 @@ function App() {
             <Link
               to="https://linkedin.com/in/canoral74"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
             >
               <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
               LinkedIn
@@ -45,7 +45,7 @@ function App() {
             <Link
               to="https://www.instagram.com/dogancan__kaya/"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
             >
               <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
               Instagram
@@ -53,7 +53,7 @@ function App() {
 
             <Link
               to="mailto:info.canoral@gmail.com"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm"
+              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
             >
               <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
               info.canoral@gmail.com

@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="w-[50%]">
+      <div className="w-[60%]">
         <form onSubmit={handleSubmit} className="mb-6">
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm font-medium">
@@ -63,7 +63,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              className=" text-sm rounded-lg block w-full p-2.5 bg-white text-black"
+              className=" text-sm rounded-lg block w-[50%] p-2.5 bg-white text-black"
               placeholder="nom@compagnie.com"
               required
             />
@@ -83,7 +83,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="btn btn-secondary text-white btn-sm font-medium rounded-lg text-sm mb-2 block"
+            className="btn btn-secondary text-white btn-sm font-medium rounded-lg text-sm mb-2 block self-center"
             disabled={state.submitting}
           >
             Envoyer
@@ -92,26 +92,4 @@ export default function Contact() {
       </div>
     </div>
   );
-}
-
-{
-  /* <form onSubmit={handleSubmit}>
-  <label htmlFor="email" className="text-white">
-    Email Address
-    <input
-      id="email"
-      type="email"
-      name="email"
-      className="input input-bordered input-secondary w-full max-w-xs"
-      placeholder="Votre e-mail"
-      required
-    />
-  </label>
-
-  <textarea id="message" name="message" className="textarea textarea-secondary" />
-
-  <button type="submit" className="btn btn-secondary text-white btn-sm" disabled={state.submitting}>
-    Submit
-  </button>
-</form> */
 }

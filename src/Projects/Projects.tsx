@@ -7,7 +7,7 @@ export default function Projects() {
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Projets</h2>
       <div className="flex justify-between max-sm:flex-col max-sm:gap-y-2">
         <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
-          <div className="flex justify-evenly items-center gap-28">
+          <div className="flex justify-evenly items-center gap-28 pt-5">
             <svg
               width="64px"
               height="64px"
@@ -138,7 +138,7 @@ export default function Projects() {
           </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
-          <div className="flex justify-evenly items-center gap-28">
+          <div className="flex justify-evenly items-center gap-28 pt-5">
             <svg width="58px" height="58px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -254,7 +254,7 @@ export default function Projects() {
           </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
-          <div className="flex justify-evenly items-center gap-28">
+          <div className="flex justify-evenly items-center gap-28 pt-5">
             <svg
               width="58px"
               height="58px"
