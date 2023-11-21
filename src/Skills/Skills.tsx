@@ -11,9 +11,9 @@ export default function Skills() {
           <thead>
             <tr>
               <th></th>
-              <th>Name</th>
-              <th>Tasks</th>
-              <th>True / False</th>
+              <th>Nom</th>
+              <th>Détails</th>
+              <th>Acquis / Non </th>
             </tr>
           </thead>
           <tbody>
