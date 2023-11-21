@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <div className="w-full" id="skills">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Compétences techniques</h2>
-      <div className="overflow-x-auto">
+      <div>
         <table className="table">
           {/* head */}
           <thead>
@@ -47,7 +47,7 @@ export default function Skills() {
             {/* row 4 */}
             <tr>
               <th>4</th>
-              <td>Interactions</td>
+              <td>Intéractions</td>
               <td>Développer une interface utilisateur dynamique avec des intéractions</td>
               <td>
                 <FontAwesomeIcon icon={faCheck} />

@@ -3,12 +3,29 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { useForm, ValidationError } from "@formspree/react";
+import DOMPurify from "dompurify";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mjvqddvw");
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const sanitizedEmail = DOMPurify.sanitize(e.currentTarget.email.value);
+    const sanitizedMessage = DOMPurify.sanitize(e.currentTarget.message.value);
+
+    await handleSubmit({
+      email: sanitizedEmail,
+      message: sanitizedMessage,
+    });
+  };
+
   if (state.succeeded) {
-    return <p>Merci pour votre message</p>;
+    return <p className="text-center text-sm">Merci pour votre message. Je vous retournerai au plus vite possible.</p>;
+  } else if (state.errors) {
+    <p className="text-center text-sm">Il y a eu une erreur lors de l'envoie. Veuillez réessayer ultérieurement</p>;
   }
+
   return (
     <div className="w-full flex flex-col flex-wrap items-center gap-2" id="contact">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Contact</h2>
@@ -54,7 +71,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="w-[60%]">
-        <form onSubmit={handleSubmit} className="max-sm:flex max-sm:flex-col">
+        <form onSubmit={handleFormSubmit} className="max-sm:flex max-sm:flex-col">
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm font-medium">
               Votre e-mail
@@ -64,6 +81,7 @@ export default function Contact() {
                 name="email"
                 className=" text-sm rounded-lg block w-[50%] p-2.5 bg-white text-black max-sm:w-full"
                 placeholder="nom@compagnie.com"
+                autoComplete="email"
                 required
               />
             </label>
@@ -77,6 +95,7 @@ export default function Contact() {
                 rows={4}
                 className="block p-2.5 w-full text-sm rounded-lg border bg-white text-black"
                 placeholder="Écrivez votre message..."
+                required
               ></textarea>
             </label>
             <ValidationError prefix="Message" field="message" errors={state.errors} />
