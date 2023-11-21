@@ -60,14 +60,10 @@ function App() {
             </Link>
           </div>
         </div>
-        <div className="article-right w-44 h-44 sm:w-fit sm:h-fit max-sm:flex max-sm:mb-5">
-          <img
-            src="about.png"
-            alt="photo de profil"
-            className="rounded-full border-solid border-2"
-            width={250}
-            height={250}
-          />
+        <div className="article-right max-sm:flex max-sm:mb-5">
+          <div className="content">
+            <img id="photo" src="about.png" alt="photo de profil" width={250} height={250} />
+          </div>
         </div>
       </div>
 

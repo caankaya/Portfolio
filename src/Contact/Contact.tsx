@@ -83,7 +83,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="btn btn-secondary text-white btn-sm font-medium rounded-lg text-sm mb-2 block self-center"
+            className="btn btn-secondary text-white btn-sm font-semibold rounded-lg text-sm mb-2 block self-center"
             disabled={state.submitting}
           >
             Envoyer

@@ -6,7 +6,7 @@ export default function Technos() {
         <div className="max-sm:mb-10">
           <h3 className="text-2xl font-bold">Design</h3>
           <ul className="flex flex-col gap-2 mt-4">
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg
                 fill="#ffffff"
                 width="32px"
@@ -30,7 +30,7 @@ export default function Technos() {
               </svg>
               Tailwind
             </li>
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg fill="#ffffff" width="32px" height="32px" viewBox="0 -4 32 32" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -40,7 +40,7 @@ export default function Technos() {
               </svg>
               SaSS
             </li>
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg
                 width="32px"
                 height="32px"
@@ -72,7 +72,7 @@ export default function Technos() {
         <div className="max-sm:mb-10">
           <h3 className="text-2xl font-bold text-se">Front-end</h3>
           <ul className="flex flex-col gap-2 mt-4">
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg
                 fill="#ffffff"
                 width="32px"
@@ -91,7 +91,7 @@ export default function Technos() {
               </svg>
               Typescript
             </li>
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -102,7 +102,7 @@ export default function Technos() {
               </svg>
               React & React Native
             </li>
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg fill="#ffffff" width="32px" height="32px" viewBox="0 -0.5 25 25" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -119,7 +119,7 @@ export default function Technos() {
         <div className="max-sm:mb-10">
           <h3 className="text-2xl font-bold">Back-end</h3>
           <ul className="flex flex-col gap-2 mt-4">
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg
                 fill="#ffffff"
                 version="1.1"
@@ -148,7 +148,7 @@ export default function Technos() {
               </svg>
               Nodejs
             </li>
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg
                 fill="#ffffff"
                 width="32px"
@@ -169,7 +169,7 @@ export default function Technos() {
               </svg>
               PostgreSQL
             </li>
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg width="32px" height="32px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -256,7 +256,7 @@ export default function Technos() {
         <div>
           <h3 className="text-2xl font-bold">Autres</h3>
           <ul className="flex flex-col gap-2 mt-4">
-            <li className="flex items-center gap-2 text-lg">
+            <li className="flex items-center gap-2 text-sm">
               <svg
                 width="32px"
                 height="32px"
