@@ -13,7 +13,7 @@ export default function Skills() {
               <th></th>
               <th>Nom</th>
               <th>Détails</th>
-              <th>Acquis / Non </th>
+              <th>Acquis</th>
             </tr>
           </thead>
           <tbody>
