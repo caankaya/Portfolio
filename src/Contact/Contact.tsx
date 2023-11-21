@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="flex flex-col items-center gap-4 mb-10">
         <p className="text-center text-sm">N'hésitez pas à me contacter par email ou via mes réseaux sociaux.</p>
         <div className="flex flex-wrap gap-2">
-          <div className="button-groupe flex gap-2 max-sm:flex max-sm:flex-col max-sm:gap-y-2">
+          <div className="button-groupe flex gap-2 max-sm:flex max-sm:flex-col max-sm:items-stretch max-sm:gap-y-2">
             <Link
               to="https://github.com/canoral"
               target="_blank"
