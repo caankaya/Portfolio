@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="w-full flex flex-col flex-wrap items-center gap-2" id="contact">
+    <div className="w-full flex flex-col flex-wrap items-center gap-2 mb-20" id="contact">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Contact</h2>
       <div className="flex flex-col items-center gap-4 mb-10">
         <p className="text-center text-sm">N'hésitez pas à me contacter par email ou via mes réseaux sociaux.</p>

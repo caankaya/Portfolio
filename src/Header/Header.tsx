@@ -50,7 +50,7 @@ function Header() {
   };
 
   return (
-    <div className="navbar bg-base-100 mb-10 sticky top-0 z-10 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-y-3 max-sm:mb-0">
+    <header className="navbar bg-base-100 mb-10 sticky top-0 z-10 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-y-3 max-sm:mb-0">
       <button className="btn btn-secondary btn-sm normal-case text-white" onClick={downloadCV}>
         Télécharger CV <FontAwesomeIcon icon={faArrowDown} bounce />
       </button>
@@ -60,7 +60,7 @@ function Header() {
         {generateLink("projects", "Projets")}
         {generateLink("contact", "Contact")}
       </div>
-    </div>
+    </header>
   );
 }
 
