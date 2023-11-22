@@ -42,7 +42,8 @@ h1 {
 .article-right::before {
   content: "";
   position: absolute;
-  inset: -50px 0px;
+  inset: -50px 50px;
+
   background: linear-gradient(360deg, #08ecf3, #966fb3);
   transition: 0.5s;
   animation: animate 4s linear infinite;

@@ -10,7 +10,7 @@ import Contact from "../Contact/Contact";
 
 function App() {
   return (
-    <div className="main">
+    <main className="main">
       <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 mb-10 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
         <div className="article-left">
           <h1 className="title text-7xl font-extrabold flex flex-col max-sm:text-4xl max-sm:text-center max-sm:flex-row max-sm:justify-center max-sm:gap-2">
@@ -73,7 +73,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-    </div>
+    </main>
   );
 }
 
