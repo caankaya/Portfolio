@@ -25,7 +25,7 @@ Bienvenue sur le dépôt GitHub de mon portfolio personnel, développé en utili
 
 3. Démarrez l'application en mode développement.
    ```bash
-   npm start
+   npm run dev
    ```
 
 L'application devrait maintenant être accessible à l'adresse http://localhost:5173 dans votre navigateur.
