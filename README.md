@@ -1,31 +1,41 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt GitHub de mon portfolio personnel, développé en utilisant React, TypeScript et Tailwind CSS. Ce portfolio a été créé dans le but de mettre en avant mes compétences en développement web et de partager mes projets avec la communauté.
 
-Currently, two official plugins are available:
+## Technologies utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - Bibliothèque JavaScript pour la construction d'interfaces utilisateur.
+- **TypeScript** - Langage de programmation qui s'ajoute à JavaScript en apportant un typage statique.
+- **Tailwind CSS** - Cadre utilitaire CSS pour la conception de l'interface utilisateur.
+- (Ajoutez d'autres technologies utilisées dans votre projet)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clonez le dépôt sur votre machine locale.
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/votre-utilisateur/mon-portfolio.git
+   ```
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+2. Accédez au répertoire du projet.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# Portofolio
->>>>>>> 0675f0bac302de2850e08926841aa565c85e80e8
+   ```bash
+   cd mon-portfolio
+   ```
+
+3. Installez les dépendances.
+
+   ```bash
+   npm install
+   ```
+
+4. Démarrez l'application en mode développement.
+   ```bash
+   npm start
+   ```
+
+L'application devrait maintenant être accessible à l'adresse http://localhost:5173 dans votre navigateur.
+
+## Licence
+
+Ce projet est sous licence [MIT](LICENSE).
