@@ -11,25 +11,19 @@ Bienvenue sur le dépôt GitHub de mon portfolio personnel, développé en utili
 
 ## Installation
 
-1. Clonez le dépôt sur votre machine locale.
+1. Accédez au répertoire du projet.
 
    ```bash
-   git clone https://github.com/votre-utilisateur/mon-portfolio.git
+   cd portfolio
    ```
 
-2. Accédez au répertoire du projet.
-
-   ```bash
-   cd mon-portfolio
-   ```
-
-3. Installez les dépendances.
+2. Installez les dépendances.
 
    ```bash
    npm install
    ```
 
-4. Démarrez l'application en mode développement.
+3. Démarrez l'application en mode développement.
    ```bash
    npm start
    ```
