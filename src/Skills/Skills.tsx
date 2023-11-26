@@ -10,7 +10,6 @@ export default function Skills() {
           {/* head */}
           <thead>
             <tr>
-              <th></th>
               <th>Nom</th>
               <th>Détails</th>
               <th>Acquis</th>
@@ -19,7 +18,6 @@ export default function Skills() {
           <tbody>
             {/* row 1 */}
             <tr>
-              <th>1</th>
               <td>User stories</td>
               <td>Rédiger le détail des fonctionnalités d'une appication web ou mobile</td>
               <td>
@@ -28,7 +26,6 @@ export default function Skills() {
             </tr>
             {/* row 2 */}
             <tr>
-              <th>2</th>
               <td>Wireframes</td>
               <td>Création des schémas de conception pour mettre évidence la structure de base d'une page</td>
               <td>
@@ -37,7 +34,6 @@ export default function Skills() {
             </tr>
             {/* row 3 */}
             <tr>
-              <th>3</th>
               <td>Responsive Design</td>
               <td>Développeur une interface utilisateur statique et adaptable à toutes les tailles d’écrans</td>
               <td>
@@ -46,7 +42,6 @@ export default function Skills() {
             </tr>
             {/* row 4 */}
             <tr>
-              <th>4</th>
               <td>Intéractions</td>
               <td>Développer une interface utilisateur dynamique avec des intéractions</td>
               <td>
@@ -55,7 +50,6 @@ export default function Skills() {
             </tr>
             {/* row 5 */}
             <tr>
-              <th>5</th>
               <td>MCD - MLD - MPD</td>
               <td>Créer une base de données</td>
               <td>
@@ -64,7 +58,6 @@ export default function Skills() {
             </tr>
             {/* row 6 */}
             <tr>
-              <th>6</th>
               <td>ORM - dataMapper</td>
               <td>Développer les composants d’accès aux données</td>
               <td>
