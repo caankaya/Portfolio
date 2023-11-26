@@ -70,7 +70,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="w-[60%]">
+      <div className="w-[60%] max-md:w-[70%]">
         <form onSubmit={handleFormSubmit} className="max-sm:flex max-sm:flex-col">
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm font-medium">
