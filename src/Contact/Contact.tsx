@@ -31,43 +31,40 @@ export default function Contact() {
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Contact</h2>
       <div className="flex flex-col items-center gap-4 mb-10">
         <p className="text-center text-sm">N'hésitez pas à me contacter par email ou via mes réseaux sociaux.</p>
-        <div className="flex flex-wrap gap-2">
-          <div className="button-groupe flex gap-2 max-sm:flex max-sm:flex-col max-sm:items-stretch max-sm:gap-y-2">
-            <Link
-              to="https://github.com/canoral"
-              target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
-            >
-              <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
-              Github
-            </Link>
+        <div className="flex flex-wrap gap-2 max-sm:flex max-sm:flex-col max-sm:items-stretch max-sm:gap-y-2">
+          <Link
+            to="https://github.com/canoral"
+            target="_blank"
+            className="github-btn bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white hover:py-2"
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
+            Github
+          </Link>
+          <Link
+            to="https://linkedin.com/in/canoral74"
+            target="_blank"
+            className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
+            LinkedIn
+          </Link>
 
-            <Link
-              to="https://linkedin.com/in/canoral74"
-              target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
-              LinkedIn
-            </Link>
+          <Link
+            to="https://www.instagram.com/dogancan__kaya/"
+            target="_blank"
+            className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
+            Instagram
+          </Link>
 
-            <Link
-              to="https://www.instagram.com/dogancan__kaya/"
-              target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
-              Instagram
-            </Link>
-
-            <Link
-              to="mailto:info.canoral@gmail.com"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
-            >
-              <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
-              info.canoral@gmail.com
-            </Link>
-          </div>
+          <Link
+            to="mailto:info.canoral@gmail.com"
+            className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+          >
+            <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
+            info.canoral@gmail.com
+          </Link>
         </div>
       </div>
       <div className="w-[60%] max-md:w-[70%]">
