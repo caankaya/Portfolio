@@ -6,7 +6,7 @@ export default function Skills() {
     <div className="w-full" id="skills">
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Compétences techniques</h2>
       <div>
-        <table className="table">
+        <table className="table max-sm:text-xs">
           {/* head */}
           <thead>
             <tr>

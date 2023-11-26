@@ -79,7 +79,7 @@ export default function Projects() {
             </div>
             <div className="card-body">
               <h3 className="card-title font-bold">Cartographie</h3>
-              <p className="text-sm">
+              <p className="text-sm max-sm:text-xs">
                 Une application interactive de cartographie qui présente les faits et les personnages historiques liés
                 au passé de Genève.
               </p>
@@ -193,7 +193,7 @@ export default function Projects() {
             </div>
             <div className="card-body">
               <h2 className="card-title font-bold">ABC Learning</h2>
-              <p className="text-sm">
+              <p className="text-sm max-sm:text-xs">
                 Cet outil permet de créer des storyboards interactifs pour représenter visuellement les programmes de
                 formation, avec flexibilité dans le choix et la personnalisation des activités.
               </p>
@@ -301,7 +301,7 @@ export default function Projects() {
             </div>
             <div className="card-body">
               <h2 className="card-title font-bold">Tableau de bord</h2>
-              <p className="text-sm">
+              <p className="text-sm max-sm:text-xs">
                 Cette application offre une expérience immersive pour explorer et découvrir des informations variées sur
                 les planètes et les différents pays du monde
               </p>
