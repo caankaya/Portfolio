@@ -46,7 +46,7 @@ h1 {
 
   background: linear-gradient(360deg, #08ecf3, #966fb3);
   transition: 0.5s;
-  animation: animate 4s linear infinite;
+  animation: animate 8s linear infinite;
 }
 .article-right:hover::before {
   inset: -20px 0px;
