@@ -50,8 +50,7 @@ h1 span {
   text-shadow: 0 0 60px #fff;
 }
 
-h1:hover :last-child {
-  transition: 0.5s;
+h1 :last-child {
   margin-left: 1rem;
 }
 

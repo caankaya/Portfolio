@@ -10,14 +10,15 @@ import Contact from "../Contact/Contact";
 import { useEffect, useState } from "react";
 
 function App() {
-  const textDesktop = "Développeur Web & Mobile | Spécialisé en React";
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const textDesktop: string = "Développeur Web & Mobile | Spécialisé en React";
+  const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <main className="main">
       <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 mb-28 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
