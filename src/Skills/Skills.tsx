@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Skills() {
   return (
     <div className="w-full" id="skills">
-      <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Compétences techniques</h2>
+      <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold text-primary">Compétences techniques</h2>
       <div>
-        <table className="table max-sm:text-xs">
+        <table className="table table-zebra max-sm:text-xs">
           {/* head */}
           <thead>
             <tr>

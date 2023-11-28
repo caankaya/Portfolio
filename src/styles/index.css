@@ -9,13 +9,39 @@ body {
   height: 100%;
 }
 
+.primary {
+  fill: oklch(var(--p));
+}
+.secondary {
+  fill: oklch(var(--s));
+}
+.accent {
+  fill: oklch(var(--a));
+}
+.base {
+  fill: oklch(var(--b1));
+}
+
+.primaryStroke {
+  stroke: oklch(var(--p));
+}
+.secondaryStroke {
+  stroke: oklch(var(--s));
+}
+.accentStroke {
+  stroke: oklch(var(--a));
+}
+.base {
+  stroke: oklch(var(--b1));
+}
+
 h1 {
-  background: linear-gradient(135deg, #08ecf3, #966fb3, #ffe999);
+  /* background: linear-gradient(135deg, #08ecf3, #966fb3, #ffe999); */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
-  animation: gradient 5s ease-in-out infinite;
+  animation: gradient 8s ease-in-out infinite;
 }
 @keyframes gradient {
   0% {
@@ -44,7 +70,7 @@ h1 {
   position: absolute;
   inset: -50px 50px;
 
-  background: linear-gradient(360deg, #08ecf3, #966fb3);
+  /* background: linear-gradient(360deg, #08ecf3, #966fb3); */
   transition: 0.5s;
   animation: animate 8s linear infinite;
 }
@@ -64,7 +90,6 @@ h1 {
 .article-right::after {
   content: "";
   position: absolute;
-  inset: 6px;
   background: #345da7;
   border-radius: 50%;
   transition: 0.5s;

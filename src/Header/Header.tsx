@@ -14,7 +14,9 @@ function Header() {
     return (
       <a
         href={`#${link}`}
-        className={`tab ${active === name ? "tab-active" : ""} max-sm:text-xs`}
+        className={`tab transition-all hover:font-bold text-primary ${
+          active === name ? "tab-active font-bold" : ""
+        } max-sm:text-xs`}
         onClick={(event) => {
           event.preventDefault();
           handleClick(name);
@@ -36,7 +38,7 @@ function Header() {
       .then((response) => {
         if (response.ok) {
           response.blob().then((blob) => {
-            const fileName = "Mon_CV.pdf";
+            const fileName = "CV-de-Can-KAYA.pdf";
             const link = document.createElement("a");
             link.href = window.URL.createObjectURL(blob);
             link.download = fileName;
@@ -51,7 +53,10 @@ function Header() {
 
   return (
     <header className="navbar bg-base-100 mb-10 sticky top-0 z-10 flex justify-between max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-y-3 max-sm:mb-0">
-      <button className="btn btn-secondary btn-sm normal-case text-white" onClick={downloadCV}>
+      <button
+        className="btn btn-secondary btn-sm normal-case text-white transition-all hover:btn-md"
+        onClick={downloadCV}
+      >
         Télécharger CV <FontAwesomeIcon icon={faArrowDown} bounce />
       </button>
       <div role="tablist" className="tabs tabs-bordered">

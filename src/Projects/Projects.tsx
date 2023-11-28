@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   return (
     <div className="w-full" id="projects">
-      <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold">Projets</h2>
+      <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold text-primary">Projets</h2>
       <div className="flex justify-between max-sm:flex-col max-sm:gap-y-2">
-        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
+        <motion.div whileHover={{ scale: 1.1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
           <Link to={"https://github.com/Canoral/carte-interactive-geneve"} target="_blank">
             <div className="flex justify-evenly items-center gap-28 pt-5">
               <svg
@@ -78,7 +78,7 @@ export default function Projects() {
               </svg>
             </div>
             <div className="card-body">
-              <h3 className="card-title font-bold">Cartographie</h3>
+              <h3 className="card-title font-bold text-primary">Cartographie</h3>
               <p className="text-sm max-sm:text-xs">
                 Une application interactive de cartographie qui présente les faits et les personnages historiques liés
                 au passé de Genève.
@@ -138,7 +138,7 @@ export default function Projects() {
             </div>
           </Link>
         </motion.div>
-        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
+        <motion.div whileHover={{ scale: 1.1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
           <Link to={"https://github.com/Canoral/ABC_Learning_Front"} target="_blank">
             <div className="flex justify-evenly items-center gap-28 pt-5">
               <svg width="58px" height="58px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +192,7 @@ export default function Projects() {
               </svg>
             </div>
             <div className="card-body">
-              <h2 className="card-title font-bold">ABC Learning</h2>
+              <h2 className="card-title font-bold text-primary">ABC Learning</h2>
               <p className="text-sm max-sm:text-xs">
                 Cet outil permet de créer des storyboards interactifs pour représenter visuellement les programmes de
                 formation, avec flexibilité dans le choix et la personnalisation des activités.
@@ -254,7 +254,7 @@ export default function Projects() {
             </div>
           </Link>
         </motion.div>
-        <motion.div whileHover={{ scale: 1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
+        <motion.div whileHover={{ scale: 1.1, rotate: 3 }} className="card w-[30%] bg-base-100 shadow-xl max-sm:w-full">
           <Link to={"https://projet-05-o-world-front.vercel.app/"} target="_blank">
             <div className="flex justify-evenly items-center gap-28 pt-5">
               <svg
@@ -300,7 +300,7 @@ export default function Projects() {
               </svg>
             </div>
             <div className="card-body">
-              <h2 className="card-title font-bold">Tableau de bord</h2>
+              <h2 className="card-title font-bold text-primary">Tableau de bord</h2>
               <p className="text-sm max-sm:text-xs">
                 Cette application offre une expérience immersive pour explorer et découvrir des informations variées sur
                 les planètes et les différents pays du monde
