@@ -43,7 +43,6 @@ h1 {
   background-size: 300% 300%;
   animation: gradient 8s ease-in-out infinite;
   transition: 0.5s;
-  display: inline-block;
 }
 
 h1 span {

@@ -10,7 +10,6 @@ import Contact from "../Contact/Contact";
 import { useEffect, useState } from "react";
 
 function App() {
-  const textMobile = "Développeur Web & Mobile  Spécialisé en React";
   const textDesktop = "Développeur Web & Mobile | Spécialisé en React";
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
@@ -21,15 +20,22 @@ function App() {
   }, []);
   return (
     <main className="main">
-      <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 mb-10 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
+      <div className="flex justify-between min-h-full max-w-6xl m-auto p-4 mb-28 relative max-sm:flex max-sm:flex-col-reverse max-sm:items-center">
         <div className="article-left">
-          <h1 className="title bg-gradient-to-r from-primary via-secondary to-accent text-7xl font-extrabold max-sm:text-4xl max-sm:text-center max-sm:flex-row max-sm:justify-center max-sm:gap-2">
-            <span>CAN</span>
-            <br />
-            <span>KAYA</span>
+          <h1 className="title flex flex-col bg-gradient-to-r from-primary via-secondary to-accent text-7xl font-extrabold max-sm:text-4xl max-sm:text-center max-sm:flex-row max-sm:justify-center max-sm:gap-2">
+            <span>CAN </span>
+            <span className="max-sm:mb-6">KAYA</span>
           </h1>
-          <p className="subtitle text-2xl text-center my-5 max-sm:text-lg text-accent font-bold">
-            {screenSize < 640 ? textMobile : textDesktop}
+          <p className="subtitle text-2xl text-center my-5 max-sm:text-lg text-accent font-bold max-sm:mb-16">
+            {screenSize < 640 ? (
+              <>
+                <span>Développeur Web & Mobile</span>
+                <br />
+                <span>Spécialisé en React</span>
+              </>
+            ) : (
+              textDesktop
+            )}
             <FontAwesomeIcon icon={faReact} spin size="lg" style={{ marginLeft: ".5rem" }} />
           </p>
           <div className="button-groupe flex flex-row gap-2 gap-y-2 max-sm:flex-col flex-wrap content-around items-stretch">

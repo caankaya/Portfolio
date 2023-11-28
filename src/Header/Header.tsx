@@ -52,7 +52,7 @@ function Header() {
   };
 
   return (
-    <header className="navbar bg-base-100 mb-10 sticky top-0 z-10 flex justify-between max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-y-3 max-sm:mb-0">
+    <header className="navbar bg-base-100 mb-10 sticky top-0 z-10 flex justify-between max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-y-3 max-sm:mb-5">
       <button
         className="btn btn-secondary btn-sm normal-case text-white transition-all hover:btn-md"
         onClick={downloadCV}
