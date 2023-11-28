@@ -42,7 +42,20 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
   animation: gradient 8s ease-in-out infinite;
+  transition: 0.5s;
+  display: inline-block;
 }
+
+h1 span {
+  transition: 0.5s;
+  text-shadow: 0 0 60px #fff;
+}
+
+h1:hover :last-child {
+  transition: 0.5s;
+  margin-left: 1rem;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
