@@ -1,15 +1,19 @@
 import { createAction, createReducer } from "@reduxjs/toolkit";
 
 interface InteractionState {
-  test: string | null;
+  eng: boolean;
 }
 
 const initialState: InteractionState = {
-  test: null,
+  eng: false,
 };
 
-export const testAction = createAction<string>("interaction/test");
+export const changeLanguage = createAction<boolean>("interaction/test");
 
-const interactionReducer = createReducer(initialState, () => {});
+const interactionReducer = createReducer(initialState, (builder) => {
+  builder.addCase(changeLanguage, (state) => {
+    state.eng = !state.eng;
+  });
+});
 
 export default interactionReducer;
