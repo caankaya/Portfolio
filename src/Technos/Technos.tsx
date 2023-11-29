@@ -269,7 +269,7 @@ export default function Technos() {
           </ul>
         </div>
         <div>
-          <h3 className="text-sm text-white font-bold bg-secondary rounded-md text-center py-1">Autres</h3>
+          <h3 className="text-sm text-white font-bold bg-secondary rounded-md text-center py-1 px-[35px]">Autres</h3>
           <ul className="flex flex-col gap-2 mt-4">
             <li className="flex items-center gap-2 text-sm max-sm:text-xs">
               <svg
