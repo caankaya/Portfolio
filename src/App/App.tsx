@@ -76,7 +76,7 @@ function App() {
             </Link>
           </div>
         </div>
-        <div className="article-right before:bg-gradient-to-r from-primary to-secondary max-sm:flex max-sm:mb-5 max-sm:w-[150px] max-sm:h-[150px] after:bg-base-100 max-sm:after:inset-1 after:inset-[6px]">
+        <div className="article-right before:bg-gradient-to-r from-primary to-secondary max-sm:flex w-[200px] h-[200px] max-sm:w-[125px] max-sm:h-[125px] max-sm:mb-5 after:bg-base-100 max-sm:after:inset-1 after:inset-[6px]">
           <div className="content">
             <img id="photo" src="about.png" alt="photo de profil" />
           </div>

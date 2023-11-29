@@ -84,6 +84,9 @@ export default function Projects() {
                 au passé de Genève.
               </p>
               <div className="card-actions justify-end">
+                <div className="badge badge-primary">
+                  <span className="ml-1 text-white">Méthode Scrum</span>
+                </div>
                 <div className="badge badge-secondary">
                   <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -198,6 +201,9 @@ export default function Projects() {
                 formation, avec flexibilité dans le choix et la personnalisation des activités.
               </p>
               <div className="card-actions justify-end">
+                <div className="badge badge-primary">
+                  <span className="ml-1 text-white">Méthode Kanban</span>
+                </div>
                 <div className="badge badge-secondary">
                   <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -300,12 +306,15 @@ export default function Projects() {
               </svg>
             </div>
             <div className="card-body">
-              <h2 className="card-title font-bold text-primary">Tableau de bord</h2>
+              <h2 className="card-title font-bold text-primary">O'World</h2>
               <p className="text-sm max-sm:text-xs">
                 Cette application offre une expérience immersive pour explorer et découvrir des informations variées sur
                 les planètes et les différents pays du monde
               </p>
               <div className="card-actions justify-end">
+                <div className="badge badge-primary">
+                  <span className="ml-1 text-white">Méthode Scrum</span>
+                </div>
                 <div className="badge badge-secondary">
                   <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

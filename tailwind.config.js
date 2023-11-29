@@ -3,12 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      // colors: {
-      //   fillPrimary: "text-primary", // Exemple de couleur primaire
-      //   fillSecondary: "text-secondary", // Exemple de couleur secondaire
-      //   fillAccent: "text-accent", // Exemple de couleur d'accent
-      //   // Ajoutez d'autres couleurs personnalisées selon vos besoins
-      // },
+      screens: {
+        "max-md": "767px",
+      },
     },
   },
   plugins: [require("daisyui")],
