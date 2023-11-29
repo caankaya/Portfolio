@@ -97,9 +97,7 @@ h1 :last-child {
 .article-right::after {
   content: "";
   position: absolute;
-  background: #345da7;
   border-radius: 50%;
-  transition: 0.5s;
   z-index: 1;
 }
 
