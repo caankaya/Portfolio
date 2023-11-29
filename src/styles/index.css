@@ -42,11 +42,9 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
   animation: gradient 6s ease-in-out infinite;
-  transition: 0.5s;
 }
 
 h1 span {
-  transition: 0.5s;
   text-shadow: 0 0 60px #fff;
 }
 
