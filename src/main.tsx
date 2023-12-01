@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import App from "./App/App";
-import store from "../redux/store";
+import store from "../redux/index";
 import "./styles/index.css";
 
 const router = createBrowserRouter(
