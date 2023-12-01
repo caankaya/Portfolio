@@ -8,7 +8,7 @@ const initialState: InteractionState = {
   eng: false,
 };
 
-export const changeLanguage = createAction("interaction reducer / changing the language");
+export const changeLanguage = createAction<boolean>("interaction/test");
 
 const interactionReducer = createReducer(initialState, (builder) => {
   builder.addCase(changeLanguage, (state) => {
