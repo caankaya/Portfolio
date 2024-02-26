@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 function Header() {
   const [active, setActive] = useState("Technologies");
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "synthwave";
+    return localStorage.getItem("theme") || "dracula";
   });
 
   const toggleTheme = () => {
-    const newTheme = theme === "synthwave" ? "nord" : "synthwave";
+    const newTheme = theme === "dracula" ? "nord" : "dracula";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
