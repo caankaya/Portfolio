@@ -1,6 +1,10 @@
 import { faReact } from "@fortawesome/free-brands-svg-icons/faReact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Technos from "../Technos/Technos";
@@ -37,42 +41,63 @@ function App() {
             ) : (
               textDesktop
             )}
-            <FontAwesomeIcon icon={faReact} spin size="lg" style={{ marginLeft: ".5rem" }} />
+            <FontAwesomeIcon
+              icon={faReact}
+              spin
+              size="lg"
+              style={{ marginLeft: ".5rem" }}
+            />
           </p>
-          <div className="button-groupe flex flex-row gap-2 gap-y-2 max-sm:flex-col flex-wrap content-around items-stretch">
+          <div className="flex flex-wrap justify-center gap-2 md:justify-start">
             <Link
               to="https://github.com/canoral"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+              className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
             >
-              <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="lg"
+                style={{ marginRight: "5px" }}
+              />
               Github
             </Link>
 
             <Link
               to="https://linkedin.com/in/canoral74"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+              className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="lg"
+                style={{ marginRight: "5px" }}
+              />
               LinkedIn
             </Link>
 
             <Link
               to="https://www.instagram.com/dogancan__kaya/"
               target="_blank"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+              className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
             >
-              <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="lg"
+                style={{ marginRight: "5px" }}
+              />
               Instagram
             </Link>
 
             <Link
-              to="mailto:info.canoral@gmail.com"
-              className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+              to="mailto:can.kaya@aol.com"
+              className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
             >
-              <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
-              info.canoral@gmail.com
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                size="lg"
+                style={{ marginRight: "5px" }}
+              />
+              can.kaya@aol.com
             </Link>
           </div>
         </div>

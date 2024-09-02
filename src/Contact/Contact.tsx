@@ -31,11 +31,11 @@ export default function Contact() {
       <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold text-primary">Contact</h2>
       <div className="flex flex-col items-center gap-4 mb-10">
         <p className="text-center text-sm">N'hésitez pas à me contacter par email ou via mes réseaux sociaux.</p>
-        <div className="flex flex-wrap gap-2 max-sm:flex max-sm:flex-col max-sm:items-stretch max-sm:gap-y-2">
+        <div className="flex flex-wrap gap-2 justify-center">
           <Link
             to="https://github.com/canoral"
             target="_blank"
-            className="github-btn bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+            className="github-btn bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
             <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
             Github
@@ -43,7 +43,7 @@ export default function Contact() {
           <Link
             to="https://linkedin.com/in/canoral74"
             target="_blank"
-            className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+            className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
             <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
             LinkedIn
@@ -51,30 +51,30 @@ export default function Contact() {
           <Link
             to="https://www.instagram.com/dogancan__kaya/"
             target="_blank"
-            className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+            className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
             <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
             Instagram
           </Link>
           <Link
-            to="mailto:info.canoral@gmail.com"
-            className="bg-secondary px-2 py-1 font-semibold rounded-md text-center text-sm text-white"
+            to="mailto:can.kaya@aol.com"
+            className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
             <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
-            info.canoral@gmail.com
+            can.kaya@aol.com
           </Link>
         </div>
       </div>
-      <div className="w-[60%] max-md:w-[70%]">
+      <div className="w-full max-md:w-[70%]">
         <form onSubmit={handleFormSubmit} className="max-sm:flex max-sm:flex-col">
           <div className="mb-6">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium">
-              Votre e-mail
+            <label htmlFor="email" className="block mb-2 text-sm">
+              E-mail
               <input
                 type="email"
                 id="email"
                 name="email"
-                className=" text-sm rounded-lg block w-[50%] p-2.5 bg-white text-black max-sm:w-full"
+                className="text-sm rounded-lg block w-[50%] p-2.5 bg-white text-black max-sm:w-full placeholder:text-xs"
                 placeholder="nom@compagnie.com"
                 autoComplete="email"
                 required
@@ -82,13 +82,13 @@ export default function Contact() {
             </label>
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 text-sm font-medium">
-              Votre message
+            <label htmlFor="message" className="block mb-2 text-sm">
+              Message
               <textarea
                 id="message"
                 name="message"
                 rows={4}
-                className="block p-2.5 w-full text-sm rounded-lg border bg-white text-black"
+                className="block p-2.5 w-full text-sm rounded-lg border bg-white text-black placeholder:text-xs"
                 placeholder="Écrivez votre message..."
                 required
               ></textarea>
@@ -98,7 +98,7 @@ export default function Contact() {
           <div className="max-sm:flex max-sm:flex-col max-sm:items-center">
             <button
               type="submit"
-              className="btn btn-secondary text-white btn-sm font-semibold rounded-lg text-sm mb-2 block max-sm:w-[65%]"
+              className="btn btn-sm bg-secondary font-normal w-1/2 md:w-1/4"
               disabled={state.submitting}
             >
               Envoyer

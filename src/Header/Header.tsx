@@ -68,7 +68,7 @@ function Header() {
     <header className="navbar bg-base-100 mb-10 sticky top-0 z-10 flex justify-between max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-y-3 max-sm:mb-5">
       <div className="max-sm:gap-x-28">
         <button
-          className="btn btn-secondary btn-sm normal-case text-white transition-all md:ml-2 hover:btn-md"
+          className="btn btn-secondary btn-sm font-normal text-white transition-all md:ml-2 hover:btn-md"
           onClick={downloadCV}
         >
           Télécharger CV <FontAwesomeIcon icon={faArrowDown} bounce />
