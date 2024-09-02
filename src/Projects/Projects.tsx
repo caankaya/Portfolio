@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import stats from "../../public/stats.png";
+import health from "../../public/healthcare.png";
+import maps from "../../public/map.png";
 
 export default function Projects() {
   return (
@@ -14,7 +17,7 @@ export default function Projects() {
         >
           <Link to={"#/"}>
             <div className="flex justify-evenly items-center gap-28 pt-5">
-              <img src="/stats.png" alt="logo mosily" width={54} />
+              <img src={stats} alt="logo mosily" width={54} />
               <svg
                 className="primary"
                 width="20px"
@@ -73,8 +76,7 @@ export default function Projects() {
         >
           <Link to={"#/"}>
             <div className="flex justify-evenly items-center gap-28 pt-5">
-              <img src="/healthcare.png" alt="" width={54} />
-
+              <img src={health} alt="" width={54} />
               <svg
                 className="primary"
                 width="20px"
@@ -133,7 +135,7 @@ export default function Projects() {
         >
           <Link to={"https://traces.colonialgeneva.ch"} target="_blank">
             <div className="flex justify-evenly items-center gap-28 pt-5">
-              <img src="/map.png" alt="logo de carte" width={54} />
+              <img src={maps} alt="logo de carte" width={54} />
               <svg
                 className="primary"
                 width="20px"
