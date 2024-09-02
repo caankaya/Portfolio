@@ -1,4 +1,8 @@
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -21,31 +25,52 @@ export default function Contact() {
   };
 
   if (state.succeeded) {
-    return <p className="text-center text-sm">Merci pour votre message. Je vous retournerai au plus vite possible.</p>;
+    return (
+      <p className="text-center text-sm">
+        Merci pour votre message. Je vous retournerai au plus vite possible.
+      </p>
+    );
   } else if (state.errors) {
-    <p className="text-center text-sm">Il y a eu une erreur lors de l'envoie. Veuillez réessayer ultérieurement</p>;
+    <p className="text-center text-sm">
+      Il y a eu une erreur lors de l'envoie. Veuillez réessayer ultérieurement
+    </p>;
   }
 
   return (
-    <div className="w-full flex flex-col flex-wrap items-center gap-2 mb-10" id="contact">
-      <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold text-primary">Contact</h2>
+    <div
+      className="w-full flex flex-col flex-wrap items-center gap-2 mb-10"
+      id="contact"
+    >
+      <h2 className="mb-8 sm:mb-10 text-4xl text-center font-extrabold text-primary">
+        Contact
+      </h2>
       <div className="flex flex-col items-center gap-4 mb-10">
-        <p className="text-center text-sm">N'hésitez pas à me contacter par email ou via mes réseaux sociaux.</p>
+        <p className="text-center text-sm">
+          N'hésitez pas à me contacter par email ou via mes réseaux sociaux.
+        </p>
         <div className="flex flex-wrap gap-2 justify-center">
           <Link
-            to="https://github.com/canoral"
+            to="https://github.com/caankaya"
             target="_blank"
             className="github-btn bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
-            <FontAwesomeIcon icon={faGithub} size="lg" style={{ marginRight: "5px" }} />
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="lg"
+              style={{ marginRight: "5px" }}
+            />
             Github
           </Link>
           <Link
-            to="https://linkedin.com/in/canoral74"
+            to="https://linkedin.com/in/caankaya"
             target="_blank"
             className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ marginRight: "5px" }} />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="lg"
+              style={{ marginRight: "5px" }}
+            />
             LinkedIn
           </Link>
           <Link
@@ -53,20 +78,31 @@ export default function Contact() {
             target="_blank"
             className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
-            <FontAwesomeIcon icon={faInstagram} size="lg" style={{ marginRight: "5px" }} />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="lg"
+              style={{ marginRight: "5px" }}
+            />
             Instagram
           </Link>
           <Link
             to="mailto:can.kaya@aol.com"
             className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
           >
-            <FontAwesomeIcon icon={faEnvelope} size="lg" style={{ marginRight: "5px" }} />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              size="lg"
+              style={{ marginRight: "5px" }}
+            />
             can.kaya@aol.com
           </Link>
         </div>
       </div>
       <div className="w-full max-md:w-[70%]">
-        <form onSubmit={handleFormSubmit} className="max-sm:flex max-sm:flex-col">
+        <form
+          onSubmit={handleFormSubmit}
+          className="max-sm:flex max-sm:flex-col"
+        >
           <div className="mb-6">
             <label htmlFor="email" className="block mb-2 text-sm">
               E-mail
@@ -93,7 +129,11 @@ export default function Contact() {
                 required
               ></textarea>
             </label>
-            <ValidationError prefix="Message" field="message" errors={state.errors} />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
           <div className="max-sm:flex max-sm:flex-col max-sm:items-center">
             <button

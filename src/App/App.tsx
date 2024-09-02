@@ -50,7 +50,7 @@ function App() {
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:justify-start">
             <Link
-              to="https://github.com/canoral"
+              to="https://github.com/caankaya"
               target="_blank"
               className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
             >
@@ -63,7 +63,7 @@ function App() {
             </Link>
 
             <Link
-              to="https://linkedin.com/in/canoral74"
+              to="https://linkedin.com/in/caankaya"
               target="_blank"
               className="bg-secondary px-2 py-1 rounded-md text-center text-sm text-white"
             >
